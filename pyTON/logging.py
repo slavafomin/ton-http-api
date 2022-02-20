@@ -90,6 +90,9 @@ class LoggerAndRateLimitMiddleware(BaseHTTPMiddleware):
         if endpoint not in self.endpoints:
             return await call_next(request)
 
+        if endpoint in ['estimateFee', 'estimateFeeSimple']:
+            return await call_next(request)
+
         keys = api_key_from_request(request)
         if not isinstance(keys, list):
             keys = [keys]
