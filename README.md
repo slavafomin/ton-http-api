@@ -84,7 +84,11 @@ Enables `jsonRPC` endpoint.
 
 - `TON_API_CLOUDFLARE_ENABLED` *(default: 0)*
 
-Configures Nginx to support Cloudflare CDN.
+Configures Nginx to support Cloudflare CDN. If enabled Nginx accepts requests only from Cloudflare and IPs whitelisted in `TON_API_WHITELISTED_IPS`.
+
+- `TON_API_WHITELISTED_IPS` *(default: empty)*
+
+Whitelist of `:` separated IPs to accept connections bypassing Cloudflare. This variable makes sense only if `TON_API_CLOUDFLARE_ENABLED` is set to 1.
 
 ## FAQ
 ### How to point the service to my own lite server?
