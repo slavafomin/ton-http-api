@@ -26,7 +26,7 @@ TESTNET_ENV = {
 	'TON_API_CACHE_ENABLED': '1',
 	'TON_API_LOGS_ENABLED': '1',
 	'TON_API_RATE_LIMIT_ENABLED': '1',
-	'TON_API_DOMAINS': 'testnet.toncenter.com',
+	'TON_API_DOMAINS': '*.testnet.toncenter.com',
 	'TON_API_SSL_ENABLED': '1',
 	'TON_API_INDEX_FOLDER': 'index_page/testnet',
 	'TON_API_ANALYTICS_ENABLED': '1',
@@ -36,7 +36,7 @@ TESTNET_ENV = {
 	'TON_API_JSON_RPC_ENABLED': '1',
 	'TON_API_HTTP_PORT': '80',
 	'TON_API_MONGODB_PORT': '27017',
-	'TON_API_CLOUDFLARE_ENABLED': '0',
+	'TON_API_CLOUDFLARE_ENABLED': '1',
 	'TON_API_WHITELISTED_IPS': ''
 }
 
@@ -44,7 +44,7 @@ PROD_ENV = {
 	'TON_API_CACHE_ENABLED': '1',
 	'TON_API_LOGS_ENABLED': '1',
 	'TON_API_RATE_LIMIT_ENABLED': '1',
-	'TON_API_DOMAINS': 'toncenter.com:wallet.toncenter.com:tonchain.co',
+	'TON_API_DOMAINS': '*.toncenter.com:wallet.toncenter.com:tonchain.co',
 	'TON_API_SSL_ENABLED': '1',
 	'TON_API_INDEX_FOLDER': 'index_page/prod',
 	'TON_API_ANALYTICS_ENABLED': '1',
@@ -54,7 +54,7 @@ PROD_ENV = {
 	'TON_API_JSON_RPC_ENABLED': '1',
 	'TON_API_HTTP_PORT': '80',
 	'TON_API_MONGODB_PORT': '27017',
-	'TON_API_CLOUDFLARE_ENABLED': '0',
+	'TON_API_CLOUDFLARE_ENABLED': '1',
 	'TON_API_WHITELISTED_IPS': ''
 }
 
