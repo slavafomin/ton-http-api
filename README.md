@@ -88,7 +88,7 @@ Configures Nginx to support Cloudflare CDN. If enabled Nginx accepts requests on
 
 - `TON_API_WHITELISTED_IPS` *(default: empty)*
 
-Whitelist of `:` separated IPs to accept connections bypassing Cloudflare. This variable makes sense only if `TON_API_CLOUDFLARE_ENABLED` is set to 1.
+Whitelist of IPs (separated by `:`) to accept connections bypassing Cloudflare. This variable makes sense only if `TON_API_CLOUDFLARE_ENABLED` is set to 1.
 
 ## FAQ
 ### How to point the service to my own lite server?
